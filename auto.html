@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/auto.css">
+    <title>Auto-calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title"> Калькулятор расчёта стоимости автомобиля </h1>
+        <div class="middle">
+            <div class="car_type">
+                <h2 class="subtitle"> Выберите тип </h2>
+                <label for="B"> Класс B </label>
+                <input type="radio" name="B" id="B">
+                <br> <label for="C"> Класс C </label>
+                <input type="radio" name="B" id="C">
+                <br> <label for="D"> Класс D </label>
+                <input type="radio" name="B" id="D">
+            </div>
+            <div class="equipment">
+                <h2 class="subtitle"> Выберите комплектацию </h2>
+                <br> <label for="conditioning"> Кондиционер </label>
+                <input type="checkbox" id="conditioning">
+                <br> <label for="Heated_seat"> Подогрев сиденья </label>
+                <input type="checkbox" id="Heated_seat">
+                <br> <label for="Parktronic"> Парктроники </label>
+                <input type="checkbox" id="Parktronic">
+                <br> <label for="Starting_heater"> Пусковой обогреватель </label>
+                <input type="checkbox" id="Starting_heater">
+                <br> <label for="Towbar"> Фаркоп </label>
+                <input type="checkbox" id="Towbar">
+            </div>
+            <div class="year_of_issue">
+                <h2 class="subtitle"> Год выпуска </h2>
+                <br> <label for="zero_ten"> 2000-2010 </label>
+                <input type="radio" name="zero_ten" id="zero_ten">
+
+                <br> <label for="eleven_fifteen"> 2011-2015 </label>
+                <input type="radio" name="zero_ten" id="eleven_fifteen">
+
+                <br> <label for="sixteen_thirty"> 2016-2020 </label>
+                <input type="radio" name="zero_ten" id="sixteen_thirty">
+            </div>
+            <div class="car_brand">
+                <h2 class="subtitle"> Выберите марку </h2>
+                <select class="brand" id="brand">
+                    <option value="empty"> --- </option>
+                    <option value="Audi"> Audi </option>
+                    <option value="Chevrolet"> Chevrolet </option>
+                    <option value="Jaguar"> Jaguar </option>
+                    <option value="Haval"> Haval </option>
+                </select>
+            </div>
+
+            <div class="body_type">
+                <h2 class="subtitle"> Тип кузова </h2>
+                <select class="type" id="type">
+                    <option value="empty"> --- </option>
+                    <option value="Sedan"> Седан </option>
+                    <option value="Hatchback"> Хетчбек </option>
+                    <option value="Universal"> Универсал </option>
+                </select>
+            </div>
+
+            <div class="consumption">
+                <h2 class="subtitle"> Тип топлива </h2>
+                <br> <label for="Petrol"> Бензин </label>
+                <input type="radio" name="Petrol" id="Petrol">
+                <br> <label for="Electricity"> Электричество </label>
+                <input type="radio" name="Petrol" id="Electricity">
+                <br> <label for="Hybrid"> Гибрид </label>
+                <input type="radio" name="Petrol" id="Hybrid">
+
+            </div>
+        </div>
+    </div>
+    <div class="btn">
+        <button class="button" onclick="auto()"> Расчитать </button>
+    </div>
+    <div class="form">
+        <p> Итого: </p>
+        <p id="out">
+
+        </p>
+    </div>
+
+    <script src="auto.js"></script>
+</body>
+
+</html>
